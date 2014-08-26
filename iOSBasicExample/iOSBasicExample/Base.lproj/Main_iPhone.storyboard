@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUZ-Fe-OBL">
+                                <rect key="frame" x="0.0" y="20" width="320" height="490"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aog-lf-q4U">
+                                <rect key="frame" x="129" y="518" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="test:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pk7-6z-eHS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aog-lf-q4U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="129" id="15Q-Ej-FT3"/>
+                            <constraint firstItem="iUZ-Fe-OBL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="9jd-on-pkm"/>
+                            <constraint firstItem="Aog-lf-q4U" firstAttribute="top" secondItem="iUZ-Fe-OBL" secondAttribute="bottom" constant="8" id="HTj-Ty-irB"/>
+                            <constraint firstItem="Aog-lf-q4U" firstAttribute="top" secondItem="iUZ-Fe-OBL" secondAttribute="bottom" constant="8" id="chR-M4-5yv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Aog-lf-q4U" secondAttribute="bottom" constant="20" id="eMt-32-s3j"/>
+                            <constraint firstItem="iUZ-Fe-OBL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="l9M-kH-EM7"/>
+                            <constraint firstAttribute="trailing" secondItem="iUZ-Fe-OBL" secondAttribute="trailing" id="sFC-4K-tjG"/>
+                            <constraint firstAttribute="trailing" secondItem="Aog-lf-q4U" secondAttribute="trailing" constant="128" id="xUI-yE-PQw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="iUZ-Fe-OBL" id="O2w-I3-NpA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

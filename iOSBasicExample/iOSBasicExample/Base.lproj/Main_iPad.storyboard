@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSa-u0-E40">
+                                <rect key="frame" x="353" y="974" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhw-T4-n7k"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-7r-Tu1">
+                                <rect key="frame" x="0.0" y="20" width="768" height="946"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Joe-7r-Tu1" secondAttribute="trailing" id="983-2p-Nf2"/>
+                            <constraint firstItem="NSa-u0-E40" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="353" id="Fzu-oX-amJ"/>
+                            <constraint firstItem="Joe-7r-Tu1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HcE-B9-GpM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NSa-u0-E40" secondAttribute="bottom" constant="20" id="eec-G2-KgT"/>
+                            <constraint firstItem="Joe-7r-Tu1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fdT-BV-aYq"/>
+                            <constraint firstItem="NSa-u0-E40" firstAttribute="top" secondItem="Joe-7r-Tu1" secondAttribute="bottom" constant="8" id="fyd-N9-2zY"/>
+                            <constraint firstItem="NSa-u0-E40" firstAttribute="top" secondItem="Joe-7r-Tu1" secondAttribute="bottom" constant="8" id="hez-H2-dgu"/>
+                            <constraint firstAttribute="trailing" secondItem="NSa-u0-E40" secondAttribute="trailing" constant="352" id="jxt-5V-hO6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Joe-7r-Tu1" id="b9I-D6-udr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
