@@ -84,7 +84,6 @@
 #import "CloudPlugsResponse.h"
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 #define TIMEOUT_INTERVAL 60.0
 

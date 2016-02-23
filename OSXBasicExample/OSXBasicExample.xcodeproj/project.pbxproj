@@ -7,25 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DFD05A1C22FF9800D79019 /* libCloudPlugsRestClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DFD0591C22FF9800D79019 /* libCloudPlugsRestClient.a */; };
 		52E04B1E191D2C2400C6587A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E04B1D191D2C2400C6587A /* Foundation.framework */; };
 		52E04B21191D2C2400C6587A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E04B20191D2C2400C6587A /* main.m */; };
-		52E04B25191D2C2400C6587A /* OSXBasicExample.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52E04B24191D2C2400C6587A /* OSXBasicExample.1 */; };
+		52E04B25191D2C2400C6587A /* OSXBasicExample.1 in Copy Files */ = {isa = PBXBuildFile; fileRef = 52E04B24191D2C2400C6587A /* OSXBasicExample.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		52E04B18191D2C2400C6587A /* CopyFiles */ = {
+		52E04B18191D2C2400C6587A /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				52E04B25191D2C2400C6587A /* OSXBasicExample.1 in CopyFiles */,
+				52E04B25191D2C2400C6587A /* OSXBasicExample.1 in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00DFD0591C22FF9800D79019 /* libCloudPlugsRestClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCloudPlugsRestClient.a; path = ../build/UninstalledProducts/macosx/libCloudPlugsRestClient.a; sourceTree = "<group>"; };
 		52E04B1A191D2C2400C6587A /* OSXBasicExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OSXBasicExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E04B1D191D2C2400C6587A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52E04B20191D2C2400C6587A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DFD05A1C22FF9800D79019 /* libCloudPlugsRestClient.a in Frameworks */,
 				52E04B1E191D2C2400C6587A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +69,7 @@
 		52E04B1C191D2C2400C6587A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00DFD0591C22FF9800D79019 /* libCloudPlugsRestClient.a */,
 				52E04B1D191D2C2400C6587A /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -97,7 +102,7 @@
 			buildPhases = (
 				52E04B16191D2C2400C6587A /* Sources */,
 				52E04B17191D2C2400C6587A /* Frameworks */,
-				52E04B18191D2C2400C6587A /* CopyFiles */,
+				52E04B18191D2C2400C6587A /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -221,6 +226,8 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSXBasicExample/OSXBasicExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../;
+				LIBRARY_SEARCH_PATHS = ../build/Release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -230,6 +237,8 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSXBasicExample/OSXBasicExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../;
+				LIBRARY_SEARCH_PATHS = ../build/Release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -253,6 +262,7 @@
 				52E04B2A191D2C2400C6587A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

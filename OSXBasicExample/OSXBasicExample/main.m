@@ -39,6 +39,7 @@ int main(int argc, const char * argv[])
                        body:@{@"data":[NSNumber numberWithInt:getTemp()]}
           completionHandler:^(CloudPlugsRequest *req, CloudPlugsResponse *res) {
               NSLog(@"publish %@", res ? (res.object ? res.object : res.string) : @"");
+              CFRunLoopStop([[NSRunLoop currentRunLoop] getCFRunLoop]);
           }];
     }
     CFRunLoopRun();
